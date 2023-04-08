@@ -1,1 +1,11 @@
+[package]
+name = "dylint_using"
+version = "0.1.0"
+authors = ["Samuel E. Moelius III <sam@moeli.us>"]
+description = "Procedural macros for working with Dylint libraries"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/trailofbits/dylint"
 
+[dependencies]
+dylint_allow = { version = "=0.1.2", path = "../allow" }
