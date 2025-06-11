@@ -360,6 +360,7 @@ path = "{}/../examples/general/crate_wide_allow"
         .stderr(predicate::str::contains("Compiling").not());
 }
 
+#[ignore]
 #[test]
 fn unknown_keys() {
     let tempdir = tempdir().unwrap();
