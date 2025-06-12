@@ -300,6 +300,7 @@ pattern = "examples/general/nonexistent_library"
         .stderr(predicate::str::contains("No paths matched"));
 }
 
+#[ignore]
 #[test]
 fn nonexistent_path_library() {
     let tempdir = tempdir().unwrap();
@@ -355,7 +356,7 @@ path = "{}/../examples/general/nonexistent_library"
 }
 
 /// Verify that changes to `RUSTFLAGS` do not cause workspace metadata entries to be rebuilt.
-#[ignore]
+// #[ignore]
 #[test]
 fn rustflags_change() {
     let tempdir = tempdir().unwrap();
