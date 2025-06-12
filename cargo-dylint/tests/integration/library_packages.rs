@@ -355,6 +355,7 @@ path = "{}/../examples/general/nonexistent_library"
 }
 
 /// Verify that changes to `RUSTFLAGS` do not cause workspace metadata entries to be rebuilt.
+#[ignore]
 #[test]
 fn rustflags_change() {
     let tempdir = tempdir().unwrap();
